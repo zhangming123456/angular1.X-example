@@ -1,0 +1,11 @@
+<script type="text/ng-template" id="tpl.html">
+    <p>{{froms.inputTests.salutation}}{{froms.inputTests.name}}</p>
+</script>
+<div>
+    <label ng-repeat="(key, value) in froms.inputTests">{{key}}:
+        <input type="text" ng-model="froms.inputTests[key]">
+    </label>
+    <button ng-click="froms.open()">确定</button>
+    <br>
+    <div ng-include src="'tpl.html'"></div>
+</div>
