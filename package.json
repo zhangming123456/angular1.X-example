@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.dev.js --progress --color ",
-    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --color --inline --hot --port 3000 --open"
+    "build": "set NODE_ENV=build && webpack --config webpack.config.dev.js --progress --color ",
+    "dev": "set NODE_ENV=dev && webpack-dev-server --config webpack.config.dev.js --progress --color --inline --hot --port 3000 --open"
   },
   "keywords": [],
   "author": "",

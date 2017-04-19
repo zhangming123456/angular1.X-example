@@ -10,7 +10,8 @@ angular.module('bindExample', [])
             open: function () {
                 this.templateUrl = 'tpl.html';
             }
-        }
+        };
+        $scope.text = "hello world"
     }]);
 
 //webpack模块配置使用

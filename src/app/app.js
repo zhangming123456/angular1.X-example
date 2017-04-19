@@ -20,6 +20,7 @@ import '../../statics/css/base/main.css';
 //statics .js
 import routing from './routing.js';
 import controllers from './controllers.js';
+import directives from '../directives/index';
 
 angular.module('app', [
     uiRouter,
@@ -28,4 +29,5 @@ angular.module('app', [
     uiBootstrap,
     routing,
     controllers,
+    directives,
 ]);

@@ -22,7 +22,6 @@ angular.module('app.routing', [])
                 template: ngBindTemplateCtrl,
             });
         $urlRouterProvider
-
             .otherwise('home');
 
         // $locationProvider.html5Mode(true);
